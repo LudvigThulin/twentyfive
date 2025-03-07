@@ -1,37 +1,50 @@
-.jag img {
-    align-self: center;
-    width: 400; 
-    height: 400;
-}
-
-.titel {
-    text-align: center;
-    font-family:'Edwardian Script ITC';
-    font-size: 45px;
-    color: green;
-}
-
-.slogan { 
-    text-align: center;
-    font-family: 'Franklin Gothic Medium';
-    font-size: 35px;
-    color: blue;
-}
-
-
-.h1 {
+#container {
     display: grid;
-    text-align: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
-   }
-   
-.image {
-     max-width: 50px;
-     max-height: 50px;
-   }
+    height: 300vh;
+    row-gap: 2vh;
+    width: 250vh;
+    grid-template-areas: 
+    "hi hi hi hi"
+    "ha ha ha ha"
+    "hogrider hogrider hogrider hogrider"
+    "skibidi skibidi skibidi skibidi";
+}
 
-.navigation {
-    text-size-adjust: 50px;
+.header {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    grid-area: hi;
+    background-color: green;
+}
 
+.nav {
+    width: 60vh;
+    height: 20vh;
+    display: flex;
+background-color: blue;
+}
+
+.main {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    grid-area: ha;
+background-color: gray;
+}
+
+.aside {
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    grid-area: hogrider;
+background-color: red;
+}
+
+.footer {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    grid-area: skibidi;
+background-color: yellow;
 }
