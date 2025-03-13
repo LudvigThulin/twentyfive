@@ -3,48 +3,43 @@
     height: 300vh;
     row-gap: 2vh;
     width: 250vh;
+    grid-template-columns: 100% ;
+    grid-template-rows: 50vh 20vh 80vh 10vh;
     grid-template-areas: 
-    "hi hi hi hi"
-    "ha ha ha ha"
-    "hogrider hogrider hogrider hogrider"
-    "skibidi skibidi skibidi skibidi";
+    "head"
+    "navi"
+    "main"
+    "foot";
 }
 
-.header {
-    width: 100%;
-    height: 70vh;
+header {
     display: flex;
-    grid-area: hi;
+    grid-area: head;
     background-color: green;
 }
 
-.nav {
-    width: 60vh;
-    height: 20vh;
+nav {
     display: flex;
-background-color: blue;
+    background-color: blue;
+    grid-area: navi;
 }
 
-.main {
-    width: 60%;
-    height: 100vh;
+main {
     display: flex;
-    grid-area: ha;
+    grid-area: main;
 background-color: gray;
 }
 
-.aside {
+/* .aside {
     width: 50%;
     height: 90vh;
     display: flex;
     grid-area: hogrider;
 background-color: red;
-}
+} */
 
-.footer {
-    width: 100%;
-    height: 50vh;
+footer {
     display: flex;
-    grid-area: skibidi;
+    grid-area: foot;
 background-color: yellow;
 }
