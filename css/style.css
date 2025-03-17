@@ -1,33 +1,48 @@
 #container {
     display: grid;
-    height: 300vh;
+    height: 250vh;
     row-gap: 2vh;
     width: 250vh;
-    grid-template-columns: 100% ;
+    grid-template-columns: 100%;
     grid-template-rows: 50vh 20vh 80vh 10vh;
-    grid-template-areas: 
-    "head"
-    "navi"
-    "main"
-    "foot";
+    grid-template-areas:
+        "head"
+        "navi"
+        "main"
+        "foot";
 }
 
 header {
     display: flex;
     grid-area: head;
-    background-color: green;
+    text-align: right
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
 }
 
 nav {
     display: flex;
-    background-color: blue;
     grid-area: navi;
+    font-size: large;
+    nav-right: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#karta {
+    width: 50%;
+}
+
+#karta2 {
+    width: 30%;
 }
 
 main {
     display: flex;
     grid-area: main;
-background-color: gray;
+    font-size: small
 }
 
 /* .aside {
@@ -41,64 +56,19 @@ background-color: red;
 footer {
     display: flex;
     grid-area: foot;
-background-color: yellow;
+    font-size: small;
 }
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
 a {
     text-decoration: none;
     color: #333;
 }
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-}
-
-.service-item, .product-item {
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-
-
-.menu-toggle {
-    display: none;
-}
-
-.nav-menu {
-    display: flex;
-    justify-content: flex-end;
-    background-color: #333;
-    padding: 10px;
-}
-
-.nav-menu ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-menu ul li a {
-    color: white;
-    font-size: 16px;
-    padding: 10px 15px;
-    border-radius: 5px;
-}
-
-.nav-menu ul li a:hover {
-    background-color: #555;
-}
-
 
 @media (max-width: 768px) {
     .grid-container {
@@ -132,4 +102,9 @@ a {
         flex-direction: column;
         gap: 10px;
     }
+}
+
+.plats {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
 }
